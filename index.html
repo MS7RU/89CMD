@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comand Promt</title>
+    <script src="data.js"> </script>
+    <script src="cmd.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <style>
+    body {
+        font-family: 'Roboto Mono', monospace;
+    }
+    #Output {
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 100%;
+        height: 97%;
+    }
+    div {
+        display: inline-block;
+        overflow: auto;
+    }
+    </style>
+    <script>
+function Clicked() {
+if (document.getElementById ("reply").value == "" || document.getElementById ("reply").value == " ") {
+    document.getElementById ("Output").innerHTML = document.getElementById ("Output").innerHTML + "<br>" + "-+Can't Send a Empty masage"
+    } else {
+    let currentDate = new Date();
+    let time = user + ": " + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+    document.getElementById ("Output").innerHTML = document.getElementById ("Output").innerHTML + "<br>" + time + "> " + document.getElementById ("reply").value
+if (document.getElementById ("reply").value[0] == ".") {
+    output()
+}
+}
+document.getElementById ("reply").value = ""
+}
+
+function enterpressalert(e, textarea){
+var code = (e.keyCode ? e.keyCode : e.which);
+if(code == 13) { //Enter keycode
+    Clicked()
+}
+}
+    </script>
+
+</head>
+<body>
+    <table style="width:100%; height:100%;">
+
+        <tr style="height: 90%; border: 1px solid black; border-collapse: collapse;">
+
+            <td colspan="2"><div id="Output"><script> document.write("&nbsp;89CMD [Version  " + vertion + "]") </script></div></td>
+            
+        </tr>
+        <tr>
+
+            <td style="width:97%;"><input style="width:100%" id="reply" name="reply" onKeyPress="enterpressalert(event, this)"></reply></td>
+            <td><button onclick="Clicked()" id="myBtn" style="width: 100%;" ><img src="outline_check_black_48dp.png" alt="ENTER"width="15" height="15"></button></td>
+
+        </tr>
+
+    </table>
+
+</body>
+</html>
