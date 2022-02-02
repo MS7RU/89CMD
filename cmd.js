@@ -4,9 +4,12 @@ function output() {
         document.getElementById ("reply").value = ""
     } else if (document.getElementById ("reply").value == "./ver"){
        var1 = "89CMD [Version  " + vertion + "]"
-    }else {
+    }else if (document.getElementById ("reply").value == "./help"){
+        CMD.html
+    } else {
         var1 = "'" +document.getElementById ("reply").value + "' is not recognized as an command."
     }
+
 
 
     end(var1)
