@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/web-application-icons-part-i/100/Artboard_18-512.png" type="image/x-icon"> 
+    <title>89CMD</title>
+    <script src="data.js"> </script>
+    <script src="cmd.js"> </script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous"> -->
+    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@600&display=swap" rel="stylesheet">
+    <style>
+    body {
+        font-family: 'Roboto Mono', monospace;
+    }
+    #Output {
+        border: 1px solid black;
+        border-radius: 10px;
+        width: 100%;   
+    }
+
+    </style>
+    <script>
+function Clicked() {
+    text = document.getElementById ("reply").value
+if (document.getElementById ("reply").value == "" || document.getElementById ("reply").value == " ") {
+    document.getElementById ("Output").innerHTML = document.getElementById ("Output").innerHTML + "<br>" + "-+Can't Send a Empty masage"
+    } else {
+    let currentDate = new Date();
+    let time = user + ": " + currentDate.getHours() + ":" + currentDate.getMinutes() + ":" + currentDate.getSeconds();
+    document.getElementById ("Output").innerHTML = document.getElementById ("Output").innerHTML + "<br>" + time + "> " + document.getElementById ("reply").value
+if (document.getElementById ("reply").value[0] == ".") {
+    output()
+}
+}
+document.getElementById ("reply").value = ""
+}
+
+function enterpressalert(e, textarea){
+var code = (e.keyCode ? e.keyCode : e.which);
+if(code == 13) {
+    document.getElementById ("myBtn").click()
+
+}
+
+}
+
+function end(var2) {
+    if (document.getElementById ("reply").value != "./clr") {
+document.getElementById ("Output").innerHTML = document.getElementById ("Output").innerHTML + "<br>" + "&nbsp; -+" + var2
+}
+
+document.getElementById ("reply").value = ""
+
+}
+
+$(document).ready(function() {
+            $("button").click(function() {
+                $(document).scrollTop($(document).height());
+            });
+        });
+</script>
+
+</head>
+<body>
+    <table style="width:100%;">
+
+        <tr style=" border: 1px solid black; border-collapse: collapse;">
+
+            <td colspan="2"><div class="scroll" id="Output"><script> document.write("&nbsp;89CMD [Version  " + vertion + "] <br>") </script></div></td>
+            
+        </tr>
+        <tr>
+
+            <td style="width:97%;"><input style="width:100%" id="reply" name="reply" onKeyPress="enterpressalert(event, this)"></reply></td>
+            <td><button onclick="Clicked()" id="myBtn" style="width: 100%;">ENTER</button></td>
+
+        </tr>
+
+    </table>
+
+</body>
+</html>
