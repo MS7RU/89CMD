@@ -5,15 +5,14 @@
 ---
 
 # How To Use?
-- This is just a Web program.
-- So first you need to get the files.
-    - https://github.com/MS7RU/89CMD/archive/refs/heads/main.zip 
-- Unzip the Zip file that you just Downloaded
-- Now you will find a folder named "89CMD-main"
-- Open it and you will find a file named "index.html"
-- Open it in you choice of browser.
-- DONE!!!
-- We would prefer you set the zoom % to 300%, it would be mutch better for you!
+- It is very easy...
+- First go to https://ms7ru.github.io/89CMD/.
+- Now Set the zoom level to 300 by
+    - Click on the 3 dots on the top right coner.
+    - You will see this <img src="https://user-images.githubusercontent.com/88928636/152283729-56198302-490b-4919-a292-737eb6422263.png" alt="ZOOM" width="150" height="20"/>
+    - Now click on the "+" untill the bar goes to 300%
+
+- :tada::tada: Done!!! :tada::tada:
 
 ---
 # Comands
