@@ -6,7 +6,7 @@
 
 # How To Use?
 - It is very easy...
-- First go to https://ms7ru.github.io/89CMD/.
+- First go to <a href='https://ms7ru.github.io/89CMD/' target='_blank'>```https://ms7ru.github.io/89CMD/```</a>.
 - Now Set the zoom level to 300 by
     - Click on the 3 dots on the top right coner.
     - You will see this <img src="https://user-images.githubusercontent.com/88928636/152283729-56198302-490b-4919-a292-737eb6422263.png" alt="ZOOM" width="150" height="20"/>
