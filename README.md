@@ -17,7 +17,8 @@
 | Comand | Use |
 | :------------- | -------------: |
 ||
-| ./clr | Clear Old Chat  |
+| ./help | Help for comands |
+| ./clr | Clear Old Chat/Comand(s) |
 | ./git | Go to the Github page |
 | ./user [NewUserName] | Set a new user name | 
 | ./ver | To see the Current Version |
